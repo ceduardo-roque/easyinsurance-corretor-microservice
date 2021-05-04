@@ -1,9 +1,8 @@
+# Gradle
+# Build using a Gradle wrapper script
 - task: Gradle@2
   inputs:
-    gradleWrapperFile: 'gradlew'
-    tasks: 'build'
-    publishJUnitResults: true
-    testResultsFiles: '**/TEST-*.xml'
+    gradleWrapperFile: 'gradlew' 
+    tasks: 'build' # A list of tasks separated by spaces, such as 'build test'
     javaHomeOption: 'JDKVersion'
-    sonarQubeRunAnalysis: false
-    spotBugsAnalysis: false
+    jdkVersionOption: '1.11'
