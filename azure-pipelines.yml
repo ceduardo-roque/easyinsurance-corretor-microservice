@@ -19,7 +19,7 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
+- steps:
 - task: Gradle@2
   inputs:
     workingDirectory: ''
